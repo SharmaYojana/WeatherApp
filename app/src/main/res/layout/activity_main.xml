@@ -11,9 +11,9 @@
     tools:context="nyc.c4q.yojana.weather.MainActivity">
 
     <TextView
+        android:id="@+id/weather"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/weather"
         android:text="default text">
 
     </TextView>

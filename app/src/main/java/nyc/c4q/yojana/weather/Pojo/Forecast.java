@@ -14,108 +14,84 @@ public class Forecast {
     private String text;
 
     /**
-     *
-     * @return
-     * The code
+     * @return The code
      */
     public String getCode() {
         return code;
     }
 
     /**
-     *
-     * @param code
-     * The code
+     * @param code The code
      */
     public void setCode(String code) {
         this.code = code;
     }
 
     /**
-     *
-     * @return
-     * The date
+     * @return The date
      */
     public String getDate() {
         return date;
     }
 
     /**
-     *
-     * @param date
-     * The date
+     * @param date The date
      */
     public void setDate(String date) {
         this.date = date;
     }
 
     /**
-     *
-     * @return
-     * The day
+     * @return The day
      */
     public String getDay() {
         return day;
     }
 
     /**
-     *
-     * @param day
-     * The day
+     * @param day The day
      */
     public void setDay(String day) {
         this.day = day;
     }
 
     /**
-     *
-     * @return
-     * The high
+     * @return The high
      */
     public String getHigh() {
         return high;
     }
 
     /**
-     *
-     * @param high
-     * The high
+     * @param high The high
      */
     public void setHigh(String high) {
         this.high = high;
     }
 
     /**
-     *
-     * @return
-     * The low
+     * @return The low
      */
     public String getLow() {
         return low;
     }
 
     /**
-     *
-     * @param low
-     * The low
+     * @param low The low
      */
     public void setLow(String low) {
         this.low = low;
     }
 
     /**
-     *
-     * @return
-     * The text
+     * @return The text
      */
     public String getText() {
         return text;
     }
 
     /**
-     *
-     * @param text
-     * The text
+     * @param text The text
      */
     public void setText(String text) {
         this.text = text;

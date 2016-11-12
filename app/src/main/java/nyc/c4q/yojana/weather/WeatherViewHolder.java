@@ -9,16 +9,15 @@ import android.widget.TextView;
  */
 
 public class WeatherViewHolder extends RecyclerView.ViewHolder {
-        TextView mtextView;
-        TextView cloudytextView;
-        TextView datetimeView;
+    TextView mtextView;
+    TextView cloudytextView;
+    TextView datetimeView;
 
-    public WeatherViewHolder(View itemView){
+    public WeatherViewHolder(View itemView) {
         super(itemView);
         mtextView = (TextView) itemView.findViewById(R.id.item_text_view);
         cloudytextView = (TextView) itemView.findViewById(R.id.item_text_cloudy);
         datetimeView = (TextView) itemView.findViewById(R.id.item_text_time);
-
 
 
     }

@@ -26,12 +26,12 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherViewHolder> {
 
     @Override
     public void onBindViewHolder(WeatherViewHolder holder, int position) {
-//        WeatherViewHolder vh = (WeatherViewHolder) holder;
-        Float something = weatherList.get(position).getMain().getTemp();
-        String tempString = Float.toString(something);
-//        Log.d("Tag",tempString);
-//        Log.d("size", Integer.toString(getItemCount()));
-        holder.mtextView.setText(tempString);
+
+        Float tempFloat = weatherList.get(position).getMain().getTemp();
+        int tempInt = getFahrenheit(tempFloat);
+        String tempString = Integer.toString(tempInt);
+
+        holder.mtextView.setText(tempString + (char) 0x00B0);
 
         String description = weatherList.get(position).getWeather().get(0).getDescription();
         holder.cloudytextView.setText((description));
@@ -46,5 +46,12 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherViewHolder> {
     @Override
     public int getItemCount() {
         return weatherList.size();
+    }
+
+    public int getFahrenheit(float degreesKelvin)
+    {
+        float f = (((degreesKelvin - 273) * (9/5)) + 32);
+        int i = Math.round(f);
+        return i;
     }
 }

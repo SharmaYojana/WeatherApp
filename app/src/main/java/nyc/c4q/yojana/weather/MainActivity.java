@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerview = (RecyclerView) findViewById(R.id.myweather);
 
 
-
-
-
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://api.openweathermap.org/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -42,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: hello");
 
         OneWeatherAPI onewWeatherAPI = retrofit.create(OneWeatherAPI.class);
-        Call<nyc.c4q.yojana.weather.OtherPojo.Example> httpRequest = onewWeatherAPI.getWeather("5128638","475566c90b46f36c71ef74179e02467e");
+        Call<nyc.c4q.yojana.weather.OtherPojo.Example> httpRequest = onewWeatherAPI.getWeather("5128638", "475566c90b46f36c71ef74179e02467e");
         httpRequest.enqueue(new Callback<nyc.c4q.yojana.weather.OtherPojo.Example>() {
             @Override
             public void onResponse(Call<nyc.c4q.yojana.weather.OtherPojo.Example> call, Response<nyc.c4q.yojana.weather.OtherPojo.Example> response) {
@@ -66,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<nyc.c4q.yojana.weather.OtherPojo.Example> call, Throwable t) {
-                Log.d("failure","no connection");
+                Log.d("failure", "no connection");
 
             }
         });

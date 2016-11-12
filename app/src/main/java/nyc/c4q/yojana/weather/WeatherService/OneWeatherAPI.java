@@ -11,5 +11,5 @@ import retrofit2.http.Query;
 public interface OneWeatherAPI {
 
     @GET("/data/2.5/forecast")
-    Call<nyc.c4q.yojana.weather.OtherPojo.Example> getWeather(@Query("id") String id, @Query("appid")String appid);
+    Call<nyc.c4q.yojana.weather.OtherPojo.Example> getWeather(@Query("id") String id, @Query("appid") String appid);
 }

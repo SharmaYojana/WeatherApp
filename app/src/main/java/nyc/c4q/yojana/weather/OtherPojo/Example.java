@@ -15,90 +15,70 @@ public class Example {
     private java.util.List<List> list = new ArrayList<List>();
 
     /**
-     *
-     * @return
-     * The city
+     * @return The city
      */
     public City getCity() {
         return city;
     }
 
     /**
-     *
-     * @param city
-     * The city
+     * @param city The city
      */
     public void setCity(City city) {
         this.city = city;
     }
 
     /**
-     *
-     * @return
-     * The cod
+     * @return The cod
      */
     public String getCod() {
         return cod;
     }
 
     /**
-     *
-     * @param cod
-     * The cod
+     * @param cod The cod
      */
     public void setCod(String cod) {
         this.cod = cod;
     }
 
     /**
-     *
-     * @return
-     * The message
+     * @return The message
      */
     public Float getMessage() {
         return message;
     }
 
     /**
-     *
-     * @param message
-     * The message
+     * @param message The message
      */
     public void setMessage(Float message) {
         this.message = message;
     }
 
     /**
-     *
-     * @return
-     * The cnt
+     * @return The cnt
      */
     public Integer getCnt() {
         return cnt;
     }
 
     /**
-     *
-     * @param cnt
-     * The cnt
+     * @param cnt The cnt
      */
     public void setCnt(Integer cnt) {
         this.cnt = cnt;
     }
 
     /**
-     *
-     * @return
-     * The list
+     * @return The list
      */
     public java.util.List<List> getList() {
         return list;
     }
 
     /**
-     *
-     * @param list
-     * The list
+     * @param list The list
      */
     public void setList(java.util.List<List> list) {
         this.list = list;

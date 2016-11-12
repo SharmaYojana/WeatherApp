@@ -10,36 +10,28 @@ public class Wind {
     private Float deg;
 
     /**
-     *
-     * @return
-     * The speed
+     * @return The speed
      */
     public Float getSpeed() {
         return speed;
     }
 
     /**
-     *
-     * @param speed
-     * The speed
+     * @param speed The speed
      */
     public void setSpeed(Float speed) {
         this.speed = speed;
     }
 
     /**
-     *
-     * @return
-     * The deg
+     * @return The deg
      */
     public Float getDeg() {
         return deg;
     }
 
     /**
-     *
-     * @param deg
-     * The deg
+     * @param deg The deg
      */
     public void setDeg(Float deg) {
         this.deg = deg;
